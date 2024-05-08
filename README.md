@@ -2,6 +2,10 @@
 
 Practice using a SQLite database to power a Node/Express web app.
 
+This project was taken from FAC list of projects and this particular project can be found here at their github account
+
+https://github.com/foundersandcoders/database-challenge
+
 ## Setup
 
 Make sure you have Git and Node (v18) installed.

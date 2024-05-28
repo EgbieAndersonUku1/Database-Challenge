@@ -91,7 +91,9 @@ The currencies in the products table are just normal numbers, with an arbitrary 
 
 ## Additional information
 
-If you are running this challenge on a Windows system, the command:
+If you are running this challenge on a Windows system, the command must include `set` before `DB_FILE`, as shown in the example glew. This is necessary because, without the `set` command, the Windows system interprets `DB_FILE` as an unrecognized command. 
+
+However, if you are running this on a Mac, you can omit the `set` command.
 
 **Example Usage:**
 
@@ -103,7 +105,3 @@ set DB_FILE=db.sqlite&& nodemon src/index.js
 
  DB_FILE=db.sqlite&& nodemon src/index.js
 
-
-must include `set` before `DB_FILE`, as shown in the example above. This is necessary because, without the `set` command, the Windows system interprets `DB_FILE` as an unrecognized command. 
-
-However, if you are running this on a Mac, you can omit the `set` command.

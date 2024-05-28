@@ -94,11 +94,15 @@ The currencies in the products table are just normal numbers, with an arbitrary 
 If you are running this challenge on a Windows system, the command:
 
 **Example Usage:**
+
 *Windows*
+
 set DB_FILE=db.sqlite&& nodemon src/index.js
 
 *Mac*
+
  DB_FILE=db.sqlite&& nodemon src/index.js
+
 
 must include `set` before `DB_FILE`, as shown in the example above. This is necessary because, without the `set` command, the Windows system interprets `DB_FILE` as an unrecognized command. 
 

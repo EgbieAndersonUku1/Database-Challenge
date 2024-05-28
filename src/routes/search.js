@@ -48,7 +48,7 @@ function Output(results) {
 function Result(product) {
   return /*html*/ `
     <li>
-      <a href="/products/${product.id}">${product.name}</a>
+      <a href="/product/${product.id}">${product.name}</a>
     </li>
   `;
 }

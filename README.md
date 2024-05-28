@@ -93,7 +93,8 @@ The currencies in the products table are just normal numbers, with an arbitrary 
 
 If you are running this challenge on a Windows system, the command must include `set` before `DB_FILE`, as shown in the example glew. This is necessary because, without the `set` command, the Windows system interprets `DB_FILE` as an unrecognized command. 
 
-However, if you are running this on a Mac, you can omit the `set` command.
+However, if you are running this on a Mac, you can omit the `set` command. These command can be found in package.json
+located in the root of the project folder
 
 **Example Usage:**
 

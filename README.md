@@ -87,3 +87,12 @@ Amend the query used in `listProducts` to also calculate the `stock_value`—the
 ## Challenge 6: format currencies
 
 The currencies in the products table are just normal numbers, with an arbitrary number of decimal places. It would be more user-friendly to format these as currency values rounded to 2 decimal places. Use the built-in SQLite [`format` function](https://www.sqlite.org/printf.html#formatting_details) to format the `unit_price` and `stock_value` columns as 2-decimal-place GBP (e.g. `£2.57`).
+
+
+## Additional information
+
+If you are running this challenge on a Windows system, the command:
+
+must include `set` before `DB_FILE`, as shown in the example above. This is necessary because, without the `set` command, the Windows system interprets `DB_FILE` as an unrecognized command. 
+
+However, if you are running this on a Mac, you can omit the `set` command.

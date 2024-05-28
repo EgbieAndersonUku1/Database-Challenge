@@ -25,7 +25,8 @@ const getNameAndDescriptionFromCategory = db.prepare(/*sql*/ `
 
 function listProducts() {
   const products = select_categories.all();
-  // add the ability for challeng
+  // TODO
+  // Add the challenge 5 here
   return select_categories.all();
 
 

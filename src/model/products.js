@@ -1,8 +1,12 @@
 const db = require("../database/db.js");
 
 
+
 const select_categories = db.prepare(/*sql*/ `
-  SELECT * FROM products
+    SELECT  id, name, category_id, quantity_per_unit, Format(unit_price, 2), units_in_stock, units_on_order,
+    Format(unit_price * units_in_stock, 2) AS stock_value
+    FROM 
+    Products;
 `);
 
 
@@ -21,12 +25,7 @@ const getNameAndDescriptionFromCategory = db.prepare(/*sql*/ `
     SELECT name AS category_name, description AS category_description FROM categories WHERE id = ?
 `);
 
-
-
 function listProducts() {
-  const products = select_categories.all();
-  // TODO
-  // Add the challenge 5 here
   return select_categories.all();
 
 
